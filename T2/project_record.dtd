@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Project record -->
+<!ELEMENT project_record (information, workteam, abstract, deliverables, date) >
+<!ATTLIST project_record key CDATA #REQUIRED >
+
+<!-- Project information -->
+<!ELEMENT information (title, subtitle?, begin_date, end_date, supervisors) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT begin_date (#PCDATA) >
+<!ELEMENT end_date (#PCDATA) >
+
+
+<!-- Supervisors -->
+<!ELEMENT supervisors (supervisor)+ >
+<!ELEMENT supervisor (name, email, link?) > <!-- Link is optional -->
+<!ELEMENT link (#PCDATA) >
+<!ATTLIST link url CDATA #REQUIRED > <!-- Link URL is required -->
+
+<!-- Project team -->
+<!ELEMENT workteam (member)+ >
+<!ELEMENT member (name, email, link?) > <!-- Link is optional -->
+<!ATTLIST member id CDATA #REQUIRED >
+<!ELEMENT name (#PCDATA) >
+<!ATTLIST name homepage CDATA #IMPLIED> <!-- Homepage is optional -->
+<!ELEMENT email (#PCDATA) >
+
+<!-- Abstract -->
+<!ELEMENT abstract (paragraph)+ >
+<!ELEMENT paragraph (#PCDATA|bold|italic|underline)* >
+<!ELEMENT bold (#PCDATA|italic|underline)* >
+<!ELEMENT italic (#PCDATA|bold|underline)* >
+<!ELEMENT underline (#PCDATA|bold|italic)* >
+
+<!-- Deliverables -->
+<!ELEMENT deliverables (delivery)+ >
+<!ELEMENT delivery (#PCDATA|link)* >
+
+<!-- Date -->
+<!ELEMENT date (#PCDATA) >
+
+

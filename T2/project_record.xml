@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project_record SYSTEM "project_record.dtd">
+<project_record key="daw2020_tpc2_a86618">
+    <information>
+        <title>Linguagens de Anotação</title>
+        <subtitle>XML - Aplicações e Tecnologias Associadas</subtitle>
+        <begin_date>21 de Outubro de 2020</begin_date>
+        <end_date>28 de Outubro de 2020</end_date>
+        <supervisors>
+            <supervisor>
+                <name homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</name>
+                <email>jcr@di.uminho.pt</email>
+            </supervisor>
+        </supervisors>
+    </information>
+    <workteam>
+        <member id="86618">
+            <name>João Carlos Garcia Linhares</name>
+            <email>a86618@alunos.uminho.pt</email>
+            <link url="https://github.com/JoaoLinhares/DAW2020">GitHub</link>
+        </member>
+    </workteam>
+    <abstract>
+        <paragraph>O XML é um formato para a criação de documentos com dados organizados de forma hierárquica capazes de descrever diversos tipos de dados. Seu propósito principal é a facilidade de compartilhamento de informações por intermédio da internet. A principal característica do XML é criar uma infraestrutura única para diversas linguagens, pois linguagens desconhecidas e de pouco uso também podem ser definidas sem maior trabalho e sem necessidade de serem submetidas aos comitês de padronização.</paragraph>
+        <paragraph>Este trabalho pretende criar um XML bem formado partindo de uma sintaxe válida, para cumprir esta tarefa foi utilzado o <bold>Oxygen XML Editor</bold>.</paragraph>
+        <paragraph>Para criar uma sintaxe válida foi criado um ficheiro DTD ao que utilizando o <bold>Oxygen XML Editor</bold> foi possível criar um XML bem estruturado ao qual só foi necessário preencher os campos com os dados correspondentes. Para além disso, depois de ter um ficheiro XML, caso um ficheiro DTD esteja linkado ao XML é possível validar o documento tendo em conta a sintaxe definida no ficheiro DTD auxiliando na construção de um ficheiro XML bem estruturado.</paragraph>
+        <paragraph>Estas tecnologias são extremamentes importantes, uma vez que são bastante simples, rápidas e intuitivas de aplicar num contexto real.</paragraph>
+    </abstract>
+    <deliverables>
+        <delivery><link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T2/project_record.dtd">DTD para o Project Record.</link></delivery>
+        <delivery><link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T2/project_record.xml">Ficheiro XML gerado a partir do DTD.</link> </delivery>
+        <delivery><link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T2/project_record.xsd">Ficheiro XSD gerado a partir do DTD.</link></delivery>
+    </deliverables>
+    <date>28-10-2020</date>
+</project_record>

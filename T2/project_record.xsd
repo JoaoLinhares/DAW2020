@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Project record -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="project_record">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="information"/>
+        <xs:element ref="workteam"/>
+        <xs:element ref="abstract"/>
+        <xs:element ref="deliverables"/>
+        <xs:element ref="date"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.project_record"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.project_record">
+    <xs:attribute name="key" use="required"/>
+  </xs:attributeGroup>
+  <!-- Project information -->
+  <xs:element name="information">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element minOccurs="0" ref="subtitle"/>
+        <xs:element ref="begin_date"/>
+        <xs:element ref="end_date"/>
+        <xs:element ref="supervisors"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="subtitle" type="xs:string"/>
+  <xs:element name="begin_date" type="xs:string"/>
+  <xs:element name="end_date" type="xs:string"/>
+  <!-- Supervisors -->
+  <xs:element name="supervisors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="supervisor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supervisor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="email"/>
+        <xs:element minOccurs="0" ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- Link is optional -->
+  <xs:element name="link">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.link"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.link">
+    <xs:attribute name="url" use="required"/>
+  </xs:attributeGroup>
+  <!-- Link URL is required -->
+  <!-- Project team -->
+  <xs:element name="workteam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="member"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="member">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="email"/>
+        <xs:element minOccurs="0" ref="link"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.member"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- Link is optional -->
+  <xs:attributeGroup name="attlist.member">
+    <xs:attribute name="id" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="name">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.name">
+    <xs:attribute name="homepage"/>
+  </xs:attributeGroup>
+  <!-- Homepage is optional -->
+  <xs:element name="email" type="xs:string"/>
+  <!-- Abstract -->
+  <xs:element name="abstract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="paragraph"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paragraph">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="bold"/>
+        <xs:element ref="italic"/>
+        <xs:element ref="underline"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bold">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="italic"/>
+        <xs:element ref="underline"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="italic">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="bold"/>
+        <xs:element ref="underline"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="underline">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="bold"/>
+        <xs:element ref="italic"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!-- Deliverables -->
+  <xs:element name="deliverables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="delivery"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delivery">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- Date -->
+  <xs:element name="date" type="xs:string"/>
+</xs:schema>
