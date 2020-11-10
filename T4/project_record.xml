@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pr SYSTEM "../Aula%204/Parte%201/ProjectRecord.dtd">
 <pr>
     <meta>
         <key>daw2020_tpc4_a86618</key>
-        <title>XSLT</title>
-        <subtitle>Processamento Estruturado de Documentos</subtitle>
+        <title>Nodejs</title>
+        <subtitle>Processamento e Representação de Informação Desenvolvimento de Aplicações Web</subtitle>
         <bdate>4 de Novembro de 2020</bdate>
         <edate>11 de Novembro de 2020</edate>
         <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
@@ -17,15 +16,17 @@
         </member>
     </team>
     <abstract>
-        <p> XML é um formato para a criação de documentos com dados organizados de forma hierárquica, frequentemente em documentos de texto formatos. Sendo uma linguagem bem formatada é possível através de um conjunto de procedimentos transformar esse mesmo ficheiro XML em um ficheiro HTML ao qual a nossa informação poderá estar bem apresentada para o utilizador através de browsers e de outros aplicativos que os suportem.</p>
-        <p> Para esta transformação são criados documentos XSL em que ao aplicar uma transformação com esse documento a um ficheiro XML é possível obter o conteúdo HTML correspondente.</p>
-        <p> Para ajudar na criação do ficheiro XSL, foi criado um documento DTD que valide o ficheiro XML que pretendemos transformar, para perceber a estrutura do respetivo e facilitar na construção do ficheiro XSL. </p>
-    </abstract>
+        <p> <b>Node.js</b> trata-se de uma framework open-source, cross-platform, e de um runtime de JavaScript que executa código de JavaScript a nível backend e frontend que elimina a espera nas operações de I/O, simplesmente continua com o pedido seguinte. <b>Node.js</b> corre numa única thread, não bloqueia, é assíncrono e é extremamente eficiente na gestão de memória.</p>
+        <p> Utilizando esta mesma framework, foi criado um servidor sobre o site criado no tpc anterior ao qual recebendo pedidos do cliente fornece a página html correspondente.</p>
+        <p> Foram necessária pequenas alterações no ficheiro <b>XSLT</b> nomeadamente nos <b>hrefs</b> dos links para estruturar o <b>url</b> de cada pedido do cliente. De seguida foi criado um servidor ao qual verifica a semântica de cada url e responde com a página certa ou com a página do índice dependendo do pedido. Caso não exista uma página correspondente ao pedido ou caso o url seja inválido aparecerá uma mensagem de erro.</p>
+        <p> Foi notável o quanto o <b>Node.js</b> facilita este tipo de trabalho pois tornou a tarefa de criar um servidor sobre o nossos site bastate simples.</p>
+ </abstract>
     <deliverables>
-        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/arq.xml">Ficheiro XML</link>
-        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/arq.dtd">DTD que valida o ficheiro XML</link>
-        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/arq.xsl">Ficheiro XSLT</link>
-        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/site">HTML gerado</link>
-        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/css">Pasta com ficheiros CSS para o HTML gerado</link> 
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T4/arq.xml">Ficheiro XML</link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T4/arq.dtd">DTD que valida o ficheiro XML</link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T4/arq.xsl">Ficheiro XSLT</link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T4/server">Server em Nodejs</link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T4/server/site">Pasta com ficheiros HTML do site gerado</link> 
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T4/server/css">Pasta com ficheiros CSS do site gerado</link> 
     </deliverables>
 </pr>

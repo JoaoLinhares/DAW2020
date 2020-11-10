@@ -63,6 +63,6 @@ function send_File(path, res, content){
 
 function send_Error(res){
     res.writeHead(404, {'Content-Type' : 'text/html; charset=utf-8'})
-    res.write("<h1> ERROR </h1>")
+    res.write("<h1> 404 - Page Not Found </h1>")
     res.end()
 }
