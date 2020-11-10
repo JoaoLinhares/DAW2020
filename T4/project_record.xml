@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../Aula%204/Parte%201/ProjectRecord.dtd">
+<pr>
+    <meta>
+        <key>daw2020_tpc4_a86618</key>
+        <title>XSLT</title>
+        <subtitle>Processamento Estruturado de Documentos</subtitle>
+        <bdate>4 de Novembro de 2020</bdate>
+        <edate>11 de Novembro de 2020</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a86618">
+            <name>João Carlos Garcia Linhares</name>
+            <email>a86618@alunos.uminho.pt</email>
+            <link url="https://github.com/JoaoLinhares/DAW2020">GitHub</link>
+        </member>
+    </team>
+    <abstract>
+        <p> XML é um formato para a criação de documentos com dados organizados de forma hierárquica, frequentemente em documentos de texto formatos. Sendo uma linguagem bem formatada é possível através de um conjunto de procedimentos transformar esse mesmo ficheiro XML em um ficheiro HTML ao qual a nossa informação poderá estar bem apresentada para o utilizador através de browsers e de outros aplicativos que os suportem.</p>
+        <p> Para esta transformação são criados documentos XSL em que ao aplicar uma transformação com esse documento a um ficheiro XML é possível obter o conteúdo HTML correspondente.</p>
+        <p> Para ajudar na criação do ficheiro XSL, foi criado um documento DTD que valide o ficheiro XML que pretendemos transformar, para perceber a estrutura do respetivo e facilitar na construção do ficheiro XSL. </p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/arq.xml">Ficheiro XML</link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/arq.dtd">DTD que valida o ficheiro XML</link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/arq.xsl">Ficheiro XSLT</link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/site">HTML gerado</link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T3/css">Pasta com ficheiros CSS para o HTML gerado</link> 
+    </deliverables>
+</pr>
