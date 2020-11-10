@@ -1,7 +1,6 @@
 var http = require('http')
 var url = require('url') 
 var fs = require('fs');
-const { send } = require('process');
 
 const numFiles =  fs.readdirSync('./site/conteudo').length;
 
