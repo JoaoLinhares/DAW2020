@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>daw2020_tpc5_a86618</key>
+        <title>JSON-Server and Fast API</title>
+        <bdate>11 de Novembro de 2020</bdate>
+        <edate>18 de Novembro de 2020</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a86618">
+            <name>João Carlos Garcia Linhares</name>
+            <email>a86618@alunos.uminho.pt</email>
+            <link url="https://github.com/JoaoLinhares/DAW2020">GitHub</link>
+        </member>
+    </team>
+    <abstract>
+        <p><b>Json-server</b> é uma ferramenta muito útil para criar um servidor que acessa uma base de dados guardada num ficheiro json em que a partir de um comando numa consola faz se o setup de um servidor funcional. </p>
+        <p>O objectivo deste trabalho é criar um servidor em <b>Node.js</b> que recebe os pedidos de um cliente e contacta o servidor em <b>Json-server</b> para obter os dados e criar uma página html com esses dados.</p>
+        <p>Este trabalho foi de elevado interesse pois mostra que é bastante simples criar servidores que se conectam a bases de dados em json de uma forma bastante rápida poupando bastante tempo e trabalho em criar algoritmos ou programs por nós próprios.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T5/json-server">Json-server</link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T5/server">Servidor em Node.js que responde aos pedidos do cliente</link>
+    </deliverables>
+</pr>
