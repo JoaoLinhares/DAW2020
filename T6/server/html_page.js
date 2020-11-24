@@ -134,19 +134,19 @@ function generateHTML(tasks,  d ){
                 <hr>
                 <form class="w3-container" action="/remove/${t.id}" method="POST" style="text-align: center; margin-left:10%; margin-right:10%;">
                 <label class="w3-text-teal"><b>Responsible:</b></label>
-                <input class="w3-input w3-border w3-light-grey" type="text" name="name" value="${t.name}">
+                <input class="w3-input w3-border w3-light-grey" type="text" name="name" value="${t.name}" readonly>
                 <hr>
                 <label class="w3-text-teal"><b>Task:</b></label>
-                <input class="w3-input w3-border w3-light-grey" type="text" name="task" value="${t.task}">
+                <input class="w3-input w3-border w3-light-grey" type="text" name="task" value="${t.task}" readonly>
                 <hr>
                 <label class="w3-text-teal"><b>Type:</b></label>
-                <input class="w3-input w3-border w3-light-grey" type="text" name="type" value="${t.type}">
+                <input class="w3-input w3-border w3-light-grey" type="text" name="type" value="${t.type}" readonly>
                 <hr>
                 <label class="w3-text-teal"><b>Register Date:</b></label>
                 <input class="w3-input w3-border w3-light-grey" type="text" name="id" value="${t.id}" readonly>
                 <hr>
                 <label class="w3-text-teal"><b>Deadline:</b></label>
-                <input class="w3-input w3-border w3-light-grey" type="datetime-local" name="deadline" value="${t.deadline}">
+                <input class="w3-input w3-border w3-light-grey" type="datetime-local" name="deadline" value="${t.deadline}" readonly>
                 <hr>
                 <input class="w3-btn w3-blue-grey" type="submit" value="Remove"/>
             </form>
