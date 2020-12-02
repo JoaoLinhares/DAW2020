@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>daw2020_tpc7_a86618</key>
+        <title> Express.JS e Pug - Front e Back End</title>
+        <bdate>25 de Novembro de 2020</bdate>
+        <edate>2 de Dezembro de 2020</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a86618">
+            <name>João Carlos Garcia Linhares</name>
+            <email>a86618@alunos.uminho.pt</email>
+            <link url="https://github.com/JoaoLinhares/DAW2020">GitHub</link>
+        </member>
+    </team>
+    <abstract>
+        <p>Após fornecido um <b>dataset</b> dos alunos de MEI da cadeira de DAW foi proposto a criação de uma <b>Servidor em Express.js</b> que utiliza o mongo para armazenar os dados de cada aluno.</p>
+        <p>O servidor responde a pedidos <b>GET</b> para obter a lista de todos os alunos ou de só um indivíduo, pedidos <b>POST</b> para adicionar alunos, pedidos <b>PUT</b> para editar alunos já existentes e pedidos <b>DELETE</b> para retirar alunos da base de dados</p>    
+        <p>As ferramentas utilizadas foram <b>Node.js</b>, <b>Express.js</b> e <b>Pug</b></p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T7/StudentsApp"><b>Express.js Server</b></link>
+    </deliverables>
+</pr>
