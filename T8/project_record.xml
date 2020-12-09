@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>daw2020_tpc8_a86618</key>
+        <title> Forms, Upload de ficheiros e download de ficheiros</title>
+        <bdate>2 de Dezembro de 2020</bdate>
+        <edate>9 de Dezembro de 2020</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a86618">
+            <name>João Carlos Garcia Linhares</name>
+            <email>a86618@alunos.uminho.pt</email>
+            <link url="https://github.com/JoaoLinhares/DAW2020">GitHub</link>
+        </member>
+    </team>
+    <abstract>
+        <p>Após criado um servidor em <b>Express.js</b> durante as aulas que permite fazer upload de um ficehiro de cada vez e fazer download dos mesmos, foi proposto editar este mesmo servidor para possibilitar fazer upload de vários ficheiros ao mesmo tempo utilizando um <b>form</b> dinâmico.</p>
+        <p>O servidor para além de permitir ver os ficheiros que foram <b>uploaded</b> para a base de dados e fazer download de um deles, o utilizador pode fazer <b>upload</b> de um ficheiro ou pode pressionar um botão para adicionar ao <b>form</b> outra entrada para fazer upload de mais um ficheiro quantas vezes quiser e pode também remover partes do <b>form</b> à sua escolha.</p>
+        <p>As ferramentas utilizadas foram <b>Node.js</b>, <b>Express.js</b> e <b>Json File</b>.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T8/upload_multiple"><b>Server Express.js</b></link>
+        <link url="https://github.com/JoaoLinhares/DAW2020/blob/main/T8/ficheiros-cartoons"><b>Imagens</b></link>
+    </deliverables>
+</pr>
